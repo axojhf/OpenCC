@@ -19,6 +19,8 @@ set(
   JPVariants
   JPShinjitaiCharacters
   JPShinjitaiPhrases
+  TSzhconvCharacters
+  TSzhconvPhrases
 )
 
 set(
@@ -176,6 +178,7 @@ set(CONFIG_FILES
   config/tw2s.json
   config/tw2sp.json
   config/tw2t.json
+  config/t2sextend.json
 )
 
 install(
