@@ -72,7 +72,7 @@ include(CPack)
 
 if (${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
     set(CMAKE_MACOSX_RPATH 1)
-    set(CMAKE_CXX_STANDARD 14)
+    set(CMAKE_CXX_STANDARD 20)
     set(CMAKE_CXX_STANDARD_REQUIRED ON)
 endif()
 
@@ -154,7 +154,7 @@ add_definitions(
 
 if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
   add_definitions(
-    -std=c++14
+    -std=c++20
     -Wall
   )
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
@@ -163,7 +163,7 @@ if ("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
   endif ()
 elseif ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   add_definitions(
-    -std=c++14
+    -std=c++20
     -Wall
   )
   set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -pthread")
