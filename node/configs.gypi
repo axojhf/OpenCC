@@ -19,6 +19,7 @@
         "../data/config/tw2s.json",
         "../data/config/tw2sp.json",
         "../data/config/tw2t.json",
+        "../data/config/t2sextend.json"
       ]
     }]
   }]
